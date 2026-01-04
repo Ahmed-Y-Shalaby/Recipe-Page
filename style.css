@@ -1,0 +1,214 @@
+:root {
+  --text-main: rgba(36, 21, 2, 0.694);
+  --accent: rgb(160, 93, 10);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.6;
+
+}
+
+.container {
+  max-width: 700px;
+  background: hsl(0, 0%, 100%);
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+body {
+    background-color: hsl(30, 18%, 87%);
+}
+
+.header_img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.header h1 {
+    font-size: 40px;
+    padding: 20px 0;
+}
+
+.bio_data p {
+    color: hsl(332, 51%, 32%);
+    margin-bottom: 50px;
+}
+
+.prep-time {
+    background-color: hsl(330, 100%, 98%);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1) ;
+    padding: 20px;
+}
+
+.prep-time-h3 {
+    padding-bottom: 10px;
+    color: hsl(332, 51%, 32%);
+    font-size: 25px;
+}
+
+.prep-time-list {
+    list-style: none;
+}
+
+.prep-time-list li {
+    line-height: 2;
+    color: hsl(24, 5%, 18%);
+}
+
+.prep-time-list li::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: rgba(36, 21, 2, 0.735);
+    margin-inline-end: 30px;
+    display: inline-block;
+}
+
+.ingred {
+    margin-top: 30px;
+    border-bottom: 2px solid hsl(30, 54%, 90%);
+}
+
+h2 {
+    font-size: 35px;
+    color: var(--accent);
+}
+
+.ingred_list {
+    list-style: none;
+}
+
+.ingred_list li {
+    line-height: 2;
+    color: var(--text-main);
+    font-size: 16px;
+}
+
+.ingred_list li:last-child {
+    padding-bottom: 30px;
+}
+
+.ingred_list li::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: var(--text-main);
+    margin: 0 30px;
+    display: inline-block;
+}
+
+.instr {
+    margin-top: 30px;
+    border-bottom: 2px hsl(30, 54%, 90%);
+}
+
+.instr_list {
+    padding-top: 15px;
+    margin-inline-start: 30px;
+}
+
+.instr_list li {
+    line-height: 2;
+    font-size: 16px;
+    color: var(--text-main);
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+.instr_list li::marker {
+    color: hsl(33, 88%, 33%);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.instr_list li:last-child {
+    padding-bottom: 40px;
+}
+
+.nutrition {
+    margin: 20px 0 20px;
+}
+
+.nutrition_bio {
+    color: var(--text-main);
+    padding: 10px 0 10px;
+}
+
+.nutrition_table {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+    color: hsl(30, 10%, 34%);
+}
+
+.nutrition_table tr {
+    border-bottom: 2px solid hsl(30, 54%, 90%);
+}
+
+.nutrition_table tr:last-child {
+    border-bottom: none;
+}
+
+.nutrition_table td {
+  padding: 12px 0;
+  font-size: 16px;
+}
+
+.nutrition_table td:first-child {
+  padding-left: 20px;
+}
+
+.nutrition_table td:last-child {
+    font-size: 20px;
+  font-weight: bold;
+  color: var(--accent);
+}
+
+
+@media (max-width: 768px) {
+
+  body {
+    background-color: white;
+  }
+
+  .container {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+  }
+
+  .header_img {
+    border-radius: 0;
+  }
+
+  .header h1 {
+    font-size: 32px;
+    padding: 20px;
+  }
+
+  section {
+    padding: 0 20px;
+  }
+
+  .prep-time {
+    margin: 20px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  .nutrition_table td {
+    padding: 12px 20px;
+  }
+}
